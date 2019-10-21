@@ -1,3 +1,71 @@
+html, body {
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+section {
+
+}
+
+section:nth-child(odd) {
+    background-color: #e31837;
+    color: white;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+}
+
 #navbar-logo {
     height: 50px;
 }
+
+#navbar a.nav-link {
+    transition: 0.4s;
+}
+
+#navbar .active a.nav-link {
+    color: #9a0100;
+}
+
+#navbar a.nav-link:hover {
+    color: #9a0100;
+    transition: 0.4s;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+#contact img, #contact p {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
+
+#contact p {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#hero {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.45), 
+        rgba(255, 255, 255, 0.45)),
+         url('../images/backgrounds/background_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding-top: 76px;
+    height: 100%;
+    width: 100%;
+}
+
