@@ -8,7 +8,11 @@ h2 {
 }
 
 section {
+    padding: 40px;
+}
 
+section:nth-child(even) {
+    background-color: #f8f9fa;
 }
 
 section:nth-child(odd) {
@@ -19,6 +23,8 @@ section:nth-child(odd) {
 #navbar {
     position: fixed;
     width: 100%;
+    z-index: 99;
+    border-bottom: solid 1px lightgrey;
 }
 
 #navbar-logo {
@@ -45,7 +51,7 @@ section:nth-child(odd) {
 
 #contact img, #contact p {
     display: inline-block;
-    width: 150px;
+    width: 80px;
     margin: 10px;
 }
 
@@ -54,18 +60,27 @@ section:nth-child(odd) {
     margin-top: 20px;
 }
 
+#contact-email {
+    vertical-align: middle;
+    font-size: 126px;
+}
+
 #hero {
     background: linear-gradient(
-        rgba(255, 255, 255, 0.45), 
-        rgba(255, 255, 255, 0.45)),
+        rgba(255, 255, 255, 0.65), 
+        rgba(255, 255, 255, 0)),
          url('../images/backgrounds/background_1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
-    padding-top: 76px;
+    padding-top: 96px;
     height: 100%;
     width: 100%;
 }
 
+#hero h2 {
+    position: relative;
+    top: 20%;
+}
