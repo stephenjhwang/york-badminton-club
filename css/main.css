@@ -64,7 +64,7 @@ section:nth-child(odd) {
     vertical-align: middle;
     font-size: 126px;
 }
-
+/*
 #hero {
     background: linear-gradient(
         rgba(255, 255, 255, 0.65), 
@@ -79,8 +79,36 @@ section:nth-child(odd) {
     height: 100%;
     width: 100%;
 }
+*/
+#hero {
+    height: 100%;
+}
 
 #hero h2 {
     position: relative;
-    top: 20%;
+    top: calc(10% + 77px);
+    font-size: 4.5vw;
+    font-weight: bold;
 }
+
+#hero .title-split-2 {
+    left: 14%;
+    display: inline-block;
+    position: relative;
+}
+
+#hero .gist {
+    color: white;
+    position: relative;
+    text-align: right;
+    width: 35%;
+    top: calc(30% + 77px);
+    left: 15%;
+}
+
+.diagonal-split-background{
+    background-color: #e31837;
+    background-image: -webkit-linear-gradient(69deg, #e31837 48%, #f8f9fa 48%);
+  }
+
+  
