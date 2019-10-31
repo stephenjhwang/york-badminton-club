@@ -130,6 +130,10 @@ section:nth-child(odd) {
 }
 
 @media screen and (max-width: 991px) {
+    .background {
+        background-color: #e31837;
+        background-image: -webkit-linear-gradient(249deg, #e31837 5%, #f8f9fa 5%);
+    }
     .column-1 {
         flex: 100%;
         max-width: 100%;
