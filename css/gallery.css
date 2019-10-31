@@ -82,7 +82,7 @@ section:nth-child(odd) {
 
 .background {
     background-color: #e31837;
-    background-image: -webkit-linear-gradient(249deg, #e31837 20%, #f8f9fa 20%);
+    background-image: -webkit-linear-gradient(249deg, #e31837 25%, #f8f9fa 25%);
 }
 
 .grid-container {
@@ -123,6 +123,10 @@ section:nth-child(odd) {
 
 .top-images {
     flex: 50%;
+}
+
+.lb-number {
+    display: none;
 }
 
 @media screen and (max-width: 991px) {
