@@ -1,4 +1,4 @@
-var max = 9;
+var max = 10;
 for (let i = 0; i <= max; i++) {
     //To create a circular column thingie
     var column = (".column-" + ((i % 4) + 1));

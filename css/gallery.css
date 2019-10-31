@@ -82,7 +82,7 @@ section:nth-child(odd) {
 
 .background {
     background-color: #e31837;
-    background-image: -webkit-linear-gradient(249deg, #e31837 25%, #f8f9fa 25%);
+    background-image: -webkit-linear-gradient(249deg, #e31837 20%, #f8f9fa 20%);
 }
 
 .grid-container {
@@ -132,7 +132,7 @@ section:nth-child(odd) {
 @media screen and (max-width: 991px) {
     .background {
         background-color: #e31837;
-        background-image: -webkit-linear-gradient(249deg, #e31837 5%, #f8f9fa 5%);
+        background-image: -webkit-linear-gradient(249deg, #e31837 3.2%, #f8f9fa 3.2%);
     }
     .column-1 {
         flex: 100%;
