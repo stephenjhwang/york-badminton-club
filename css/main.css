@@ -7,6 +7,16 @@ h2 {
     font-size: 32px;
 }
 
+body a {
+    text-decoration: underline;
+    color: unset;
+}
+
+body a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
 section {
     padding: 40px;
 }
@@ -46,7 +56,7 @@ section:nth-child(odd) {
 
 #contact {
     text-align: center;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 #contact img, #contact p {
@@ -86,7 +96,7 @@ section:nth-child(odd) {
 
 #hero h2 {
     position: relative;
-    top: calc(10% + 77px);
+    top: calc(8% + 65px);
     font-size: 4.5vw;
     font-weight: bold;
 }
@@ -102,7 +112,7 @@ section:nth-child(odd) {
     position: relative;
     text-align: right;
     width: 35%;
-    top: calc(30% + 77px);
+    top: calc(30% + 65px);
     left: 15%;
 }
 
@@ -111,4 +121,48 @@ section:nth-child(odd) {
     background-image: -webkit-linear-gradient(69deg, #e31837 48%, #f8f9fa 48%);
   }
 
-  
+#schedule #gym-img {
+    width: 35%;
+    margin: 0 2.5% 2.5% 2.5%;
+    border: solid 15px #f8f9fa;
+}
+
+#schedule article {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 5%;
+}
+
+#faq {
+    text-align: center;
+    transition: 0.8s ease;
+    max-height: 170px;
+    overflow: hidden;
+}
+
+#faq-toggle {
+    transition: 0.8s ease;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+#faq-toggle.collapse {
+    transform: rotate(180deg);
+    display: inline;
+}
+
+#faq p {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #hero h2 {
+        font-size: 9vw;
+    }
+
+    #schedule #gym-img {
+        display: none;
+    }
+}
