@@ -162,6 +162,13 @@ section:nth-child(odd) {
         font-size: 9vw;
     }
 
+    #hero .gist {
+        text-align: left;
+        width: 100%;
+        left: 0;
+        top: calc(35% + 100px);
+    }
+
     #schedule #gym-img {
         display: none;
     }
