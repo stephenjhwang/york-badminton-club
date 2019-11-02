@@ -8,11 +8,6 @@ h2 {
     font-size: 32px;
 }
 
-body a {
-    text-decoration: underline;
-    color: unset;
-}
-
 body a:hover {
     text-decoration: none;
     color: unset;
@@ -139,6 +134,11 @@ section:nth-child(odd) {
     margin-left: 5%;
 }
 
+#schedule a {
+    text-decoration: underline;
+    color: unset;
+}
+
 #faq {
     text-align: center;
     transition: 0.8s ease;
@@ -158,8 +158,8 @@ section:nth-child(odd) {
     display: inline;
 }
 
-#faq p {
-    margin-bottom: 20px;
+#faq p:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 600px) {

@@ -47,7 +47,7 @@ section:nth-child(odd) {
 
 #contact {
     text-align: center;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 #contact img,
@@ -67,11 +67,12 @@ section:nth-child(odd) {
     font-size: 126px;
 }
 
-#hero h2 {
+
+#gallery h2 {
     position: relative;
-    top: calc(10% + 77px);
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: bold;
+    margin-bottom: 50px;
 }
 
 #canvas {

@@ -4,7 +4,7 @@ $( document ).ready(function() {
             $(this).removeClass('expand').addClass('collapse');
             //$('#faq').css('max-height', 'none');
             let faq = document.getElementById("faq");
-            faq.style.maxHeight = faq.scrollHeight + "px";
+            faq.style.maxHeight = faq.scrollHeight + 50 + "px";
             
         }
         else if ( $(this).hasClass('collapse') ) {
