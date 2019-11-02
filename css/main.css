@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -59,7 +60,8 @@ section:nth-child(odd) {
     padding: 40px 20px;
 }
 
-#contact img, #contact p {
+#contact img,
+#contact p {
     display: inline-block;
     width: 80px;
     margin: 10px;
@@ -74,6 +76,8 @@ section:nth-child(odd) {
     vertical-align: middle;
     font-size: 126px;
 }
+
+
 /*
 #hero {
     background: linear-gradient(
@@ -90,6 +94,7 @@ section:nth-child(odd) {
     width: 100%;
 }
 */
+
 #hero {
     height: 100%;
 }
@@ -116,7 +121,7 @@ section:nth-child(odd) {
     left: 15%;
 }
 
-.diagonal-split-background{
+.diagonal-split-background {
     background-color: #e31837;
     background-image: -webkit-linear-gradient(69deg, #e31837 48%, #f8f9fa 48%);
   }
