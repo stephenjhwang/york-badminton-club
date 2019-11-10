@@ -15,7 +15,11 @@ $( document ).ready(function() {
         }
     });
 
-    var filepath = window.location.origin + "/announcements.txt";
+    if (window.location.origin.find("github") !== -1)
+        var filepath = window.location.origin + "/york-badminton-club/announcements.txt" 
+    else
+        var filepath = window.location.origin + "/announcements.txt";
+        
     $.get(filepath, function(txt) {
         var lines = txt.responseText.split("\n"),
             stage = 0,
