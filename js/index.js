@@ -77,32 +77,16 @@ $( document ).ready(function() {
         var messages = "";
         announcements.forEach(function(e) {
             messages += '<div class="ann-message">'
-                        + e.title != "" ? ('<h3> class="ann-title">' + e.title.trim() + '</h3>') : ""
-                        + e.date != "" ? ('<p class="ann-date">' + e.date.trim() + '</p>') : ""
-                        + e.content != "" ? ('<p class="ann-content">' + e.content.trim() + '</p>') : ""
-                        + e.url != "" ? ('<a class="ann-url">' + e.url.trim() + '</a>') : ""
+                        + (e.title != "" ? ('<h3 class="ann-title">' + e.title.trim() + '</h3>') : "")
+                        + (e.date != "" ? ('<p class="ann-date">' + e.date.trim() + '</p>') : "")
+                        + (e.content != "" ? ('<p class="ann-content">' + e.content.trim() + '</p>') : "")
+                        + (e.url != "" ? ('<a class="ann-url href="' + e.url.trim() + '">See Details</a>') : "")
                       + '</div>'
         });
         if (messages != "")
             $('#announcements').html("<h2>Announcements</h2>" + messages);
         else 
             $('#announcements').html("<h2>Announcements</h2>" + '<p class="ann-date">No Announcements to Show</p>');
-
-/*         for (var i = 0, len = lines.length; i < len; i++) {
-            if (lines[i] === "") linebreaks++; // add 1 if theres a line with no text 
-            if ((linebreaks > 0 && lines[i] !== "") || lines[i] === "skip") stage++; // add 1 to stage when there has been 1 or more lines consecutively without text
-                linebreaks = 0; // reset linebreaks so we can read text
-            if (stage === 0) { // Title
-                html.title += lines[i];
-            } else if (stage === 1) { // Date
-                html.date += lines[i];
-            } else if (stage === 2) { // Description
-                html.content += lines[i];
-            } else if (stage === 3) { // URL
-                html.content += lines[i]
-            }
-        } */
-
 
     });
 });
