@@ -179,3 +179,24 @@ section:nth-child(even) {
         display: none;
     }
 }
+
+#announcements {
+    text-align: center;
+}
+
+#announcements .ann-message {
+    margin-top: 20px;
+}
+
+#announcements .ann-title {
+    margin: 0;
+}
+
+#announcements .ann-date {
+    font-style: oblique;
+    margin: 0;
+}
+
+#announcements .ann-content {
+    margin-top: 10px;
+}

@@ -28,7 +28,7 @@ $( document ).ready(function() {
                 title: "", date: "", content: "", url: ""
             },
             announcements = [];
-
+        // gotta parse the text    
         var i = 0,
             len = lines.length;
         // skip empty lines in beginning of text file
@@ -73,6 +73,20 @@ $( document ).ready(function() {
         }
 
         console.log(announcements);
+
+        var messages = "";
+        announcements.forEach(function(e) {
+            messages += '<div class="ann-message">'
+                        + e.title != "" ? ('<h3> class="ann-title">' + e.title.trim() + '</h3>') : ""
+                        + e.date != "" ? ('<p class="ann-date">' + e.date.trim() + '</p>') : ""
+                        + e.content != "" ? ('<p class="ann-content">' + e.content.trim() + '</p>') : ""
+                        + e.url != "" ? ('<a class="ann-url">' + e.url.trim() + '</a>') : ""
+                      + '</div>'
+        });
+        if (messages != "")
+            $('#announcements').html("<h2>Announcements</h2>" + messages);
+        else 
+            $('#announcements').html("<h2>Announcements</h2>" + '<p class="ann-date">No Announcements to Show</p>');
 
 /*         for (var i = 0, len = lines.length; i < len; i++) {
             if (lines[i] === "") linebreaks++; // add 1 if theres a line with no text 
