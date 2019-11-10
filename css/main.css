@@ -17,11 +17,11 @@ section {
     padding: 40px;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: #f8f9fa;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #e31837;
     color: white;
 }
@@ -99,6 +99,7 @@ section:nth-child(odd) {
     top: calc(8% + 65px);
     font-size: 4.5vw;
     font-weight: bold;
+    color: black;
 }
 
 #hero .title-split-2 {
