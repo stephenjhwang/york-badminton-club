@@ -21,7 +21,7 @@ $( document ).ready(function() {
         var filepath = window.location.origin + "/announcements.txt";
 
     $.get(filepath, function(txt) {
-        var lines = txt.responseText.split("\n"),
+        var lines = txt.split("\n"),
             stage = 0,
             linebreaks = 0,
             html = {
@@ -49,7 +49,7 @@ $( document ).ready(function() {
             } else if (stage === 2) { // Description
                 html.content += " " + lines[i];
             } else if (stage === 3) { // URL
-                html.content += " " + lines[i]
+                html.url += " " + lines[i]
             }
 
             i++;
@@ -63,7 +63,6 @@ $( document ).ready(function() {
             }
         }
 
-        console.log(html);
 
 /*         for (var i = 0, len = lines.length; i < len; i++) {
             if (lines[i] === "") linebreaks++; // add 1 if theres a line with no text 
@@ -79,5 +78,7 @@ $( document ).ready(function() {
                 html.content += lines[i]
             }
         } */
+
+
     });
 });
