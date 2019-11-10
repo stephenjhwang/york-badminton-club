@@ -77,7 +77,7 @@ $( document ).ready(function() {
         var messages = "";
         announcements.forEach(function(e) {
             messages += '<div class="ann-message">'
-                        + (e.title != "" ? ('<h3 class="ann-title"' + e.title.trim() + '</h3>') : "")
+                        + (e.title != "" ? ('<h3 class="ann-title">' + e.title.trim() + '</h3>') : "")
                         + (e.date != "" ? ('<p class="ann-date">' + e.date.trim() + '</p>') : "")
                         + (e.content != "" ? ('<p class="ann-content">' + e.content.trim() + '</p>') : "")
                         + (e.url != "" ? ('<a class="ann-url href="' + e.url.trim() + '">See Details</a>') : "")
