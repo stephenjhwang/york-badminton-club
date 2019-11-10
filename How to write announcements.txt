@@ -1,0 +1,42 @@
+Each announcement is seperated into 4 chunks: title, date, content, url.
+You MUST include all 4 chunks per announcement.
+Chunks are seperated by blank line(s)
+If you want to omit a chunk write "skip" on a line where you would normally have the
+chunk.
+
+--------------- e.g. one announcement: ----------------------
+
+Badminton Tournament
+
+November 11, 2019
+
+We will be having a badminton tournament on this day and doing this stuff
+and there will be free food!
+
+https://facebook.com/tournamentpage
+
+-------------- e.g. multiple announcements -----------------
+
+Badminton Tournament
+
+
+November 11, 2019
+
+
+
+
+We will be having a badminton tournament on this day and doing this stuff
+and there will be free food!
+
+https://facebook.com/tournamentpage
+
+Session Cancelled!!
+
+today
+
+skip
+
+skip
+
+
+
