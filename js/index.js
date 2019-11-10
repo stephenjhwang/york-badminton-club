@@ -45,7 +45,7 @@ $( document ).ready(function() {
             }
             if (stage === 4) { // reset stage/html and add html to list
                 stage = 0;
-                announcements.append(html);
+                announcements.push(html);
                 html = {
                     title: "", date: "", content: "", url: ""
                 }
@@ -72,6 +72,7 @@ $( document ).ready(function() {
             }
         }
 
+        console.log(announcements);
 
 /*         for (var i = 0, len = lines.length; i < len; i++) {
             if (lines[i] === "") linebreaks++; // add 1 if theres a line with no text 
