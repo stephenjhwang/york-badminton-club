@@ -59,7 +59,7 @@ $( document ).ready(function() {
             }
         }
 
-
+        console.log(html);
 
 /*         for (var i = 0, len = lines.length; i < len; i++) {
             if (lines[i] === "") linebreaks++; // add 1 if theres a line with no text 
@@ -75,7 +75,5 @@ $( document ).ready(function() {
                 html.content += lines[i]
             }
         } */
-
-        console.log(html);
     });
 });
