@@ -25,23 +25,32 @@ $( document ).ready(function() {
             stage = 0,
             linebreaks = 0,
             html = {
-                title: "",
-                date: "",
-                content: "",
-                url: ""
-            };
+                title: "", date: "", content: "", url: ""
+            },
+            announcements = [];
 
         var i = 0,
             len = lines.length;
-
-        while (lines[i] === "" && i < len) { // skip empty lines in beginning of text file
-            i++;
-        }
+        // skip empty lines in beginning of text file
+        while (lines[i] === "" && i < len) i++;
         
         while (i < len) {
-            if (lines[i] === "") linebreaks++; // add 1 if theres a line with no text
-            if (linebreaks > 0 && lines[i] !== "") stage++; // add 1 to stage when there has been 1 or more lines consecutively without text
-            
+            if (lines[i] === "") { // add 1 to line break if there is an empty line
+                linebreaks++;
+                while (i < len && lines[i] === "") i++; // skip consecutive empty lines
+             }
+            if (linebreaks > 0 && lines[i] !== "") { // add 1 to stage if there have been linebreak(s)
+                stage++;
+                linebreaks = 0;
+            }
+            if (stage === 4) { // reset stage/html and add html to list
+                stage = 0;
+                announcements.append(html);
+                html = {
+                    title: "", date: "", content: "", url: ""
+                }
+            }
+
             if (stage === 0) { // Title
                 html.title += " " + lines[i];
             } else if (stage === 1) { // Date
