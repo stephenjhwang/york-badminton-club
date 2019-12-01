@@ -15,6 +15,15 @@ $( document ).ready(function() {
         }
     });
 
+    const converter = new showdown.Converter();
+    $('#translate-md').click(function() {
+        let value = $('#markdown-editor').val()
+        let html = converter.makeHtml(value);
+        $('#announcements').html(html);
+    });
+
+
+/*
     if (window.location.origin.indexOf("github") !== -1)
         var filepath = window.location.origin + "/york-badminton-club/announcements.txt" 
     else
@@ -89,4 +98,6 @@ $( document ).ready(function() {
             $('#announcements').html("<h2>Announcements</h2>" + '<p class="ann-date">No Announcements to Show</p>');
 
     });
+
+    */
 });

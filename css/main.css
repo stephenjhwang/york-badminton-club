@@ -207,3 +207,32 @@ section:nth-child(even) {
     margin-top: 20px;
     margin-bottom: 0;
 }
+
+#edit-container {
+    width: calc(50% - 5px);
+    display: inline-block;
+    height: 100%;
+    overflow: auto;
+}
+
+#preview-container {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#markdown-editor {
+    height: calc(100% - 50px);
+    width: 100%; 
+    display: block;
+}
+
+#edit-container .topnav {
+    height: 50px;
+    width: 100%;
+}
+
+#edit-container .topnav button {
+    height: 30px;
+}
