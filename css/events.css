@@ -1,0 +1,19 @@
+#events {
+    padding: 75px 15%;
+    background-color:#f8f9fa;
+    color: black;
+    text-align: left;
+}
+
+#events h1:first-child {
+    margin: 35px 0;
+    font-size: 3.5rem;
+}
+
+#events h1, #events h3 {
+    color: rgba(0,0,0,0.9)
+}
+
+#events h2, #events h4 {
+    color: rgba(0,0,0,0.6)
+}

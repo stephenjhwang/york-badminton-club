@@ -1,6 +1,11 @@
 html,
 body {
     height: 100%;
+    color: rgba(0,0,0,0.9);
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
@@ -15,6 +20,7 @@ body a:hover {
 
 section {
     padding: 40px;
+    text-align: center;
 }
 
 section:nth-child(odd) {
@@ -51,11 +57,10 @@ section:nth-child(even) {
 }
 
 #contact {
-    text-align: center;
     padding: 40px 20px;
 }
 
-#contact.gallery-page {
+#contact {
     background: #e31837;
     color: white;
 }
@@ -104,7 +109,7 @@ section:nth-child(even) {
     top: calc(8% + 65px);
     font-size: 4.5vw;
     font-weight: bold;
-    color: black;
+    color: rgba(0,0,0,0.9);
 }
 
 #hero .title-split-2 {
@@ -146,7 +151,6 @@ section:nth-child(even) {
 }
 
 #faq {
-    text-align: center;
     transition: 0.8s ease;
     max-height: 170px;
     overflow: hidden;
@@ -185,10 +189,6 @@ section:nth-child(even) {
     }
 }
 
-#announcements {
-    text-align: center;
-}
-
 #announcements .ann-message {
     margin-top: 30px;
 }
@@ -206,6 +206,10 @@ section:nth-child(even) {
 #announcements .ann-content {
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+#announcements h1:first-child {
+    margin-bottom: 25px;
 }
 
 #edit-container {
@@ -235,4 +239,17 @@ section:nth-child(even) {
 
 #edit-container .topnav button {
     height: 30px;
+}
+
+#announcements {
+    padding: 40px 15%;
+    text-align: left;
+}
+
+#announcements h1, #announcements h3 {
+    color: rgba(0,0,0,0.9)
+}
+
+#announcements h2, #announcements h4 {
+    color: rgba(0,0,0,0.6)
 }

@@ -15,12 +15,6 @@ $( document ).ready(function() {
         }
     });
 
-    const converter = new showdown.Converter();
-    $('#translate-md').click(function() {
-        let value = $('#markdown-editor').val()
-        let html = converter.makeHtml(value);
-        $('#announcements').html(html);
-    });
 
 
 /*
