@@ -118,7 +118,7 @@ section:nth-child(even) {
     position: relative;
     text-align: right;
     width: 35%;
-    top: calc(30% + 65px);
+    top: calc(40% + 65px);
     left: 15%;
 }
 
@@ -168,6 +168,17 @@ section:nth-child(even) {
     margin-bottom: 40px;
 }
 
+
+
+@media screen and (max-width: 1200px) {
+    #hero .gist {
+        text-align: left;
+        width: 50%;
+        left: 140px;
+        top: calc(45% + 100px);
+    }
+}
+
 @media screen and (max-width: 600px) {
     #hero h2 {
         font-size: 9vw;
@@ -177,13 +188,31 @@ section:nth-child(even) {
         text-align: left;
         width: 100%;
         left: 0;
-        top: calc(35% + 100px);
+        top: calc(40% + 100px);
     }
 
     #schedule #gym-img {
         display: none;
     }
 }
+
+@media screen and (max-width: 375px) {
+    #hero .gist {
+        top: calc(35% + 100px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #hero .gist {
+        top: calc(30% + 100px);
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    #hero .gist {
+        top: calc(35% + 100px);
+    }
+} */
 
 #announcements {
     text-align: center;
