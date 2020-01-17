@@ -125,7 +125,7 @@ section:nth-child(even) {
 .diagonal-split-background {
     background-color: #e31837;
     background-image: -webkit-linear-gradient(69deg, #e31837 48%, #f8f9fa 48%);
-  }
+}
 
 #schedule #gym-img {
     width: 35%;
@@ -168,7 +168,11 @@ section:nth-child(even) {
     margin-bottom: 40px;
 }
 
-
+#hyperlink {
+    color: white;
+    text-decoration: none;
+    background-color: none;
+}
 
 @media screen and (max-width: 1200px) {
     #hero .gist {
@@ -183,14 +187,12 @@ section:nth-child(even) {
     #hero h2 {
         font-size: 9vw;
     }
-
     #hero .gist {
         text-align: left;
         width: 100%;
         left: 0;
         top: calc(40% + 100px);
     }
-
     #schedule #gym-img {
         display: none;
     }
@@ -207,6 +209,7 @@ section:nth-child(even) {
         top: calc(30% + 100px);
     }
 }
+
 
 /* @media screen and (max-width: 600px) {
     #hero .gist {
