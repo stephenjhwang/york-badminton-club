@@ -1,0 +1,175 @@
+html,
+body {
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+body a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+section {
+    padding: 40px;
+}
+
+.background {
+    background-color: #e31837;
+    background-image: -webkit-linear-gradient(249deg, #e31837 20%, #f8f9fa 20%);
+}
+
+.subsection h2 {
+    font-size: 50px;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    border-bottom: solid 1px lightgrey;
+}
+
+#navbar-logo {
+    height: 50px;
+}
+
+#navbar a.nav-link {
+    transition: 0.4s;
+}
+
+#navbar .active a.nav-link {
+    color: #9a0100;
+}
+
+#navbar a.nav-link:hover {
+    color: #9a0100;
+    transition: 0.4s;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contact.gallery-page {
+    background: #e31837;
+    color: white;
+}
+
+#contact img,
+#contact p {
+    display: inline-block;
+    width: 80px;
+    margin: 10px;
+}
+
+#contact p {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#contact-email {
+    vertical-align: middle;
+    font-size: 126px;
+}
+
+#hero {
+    height: 100%;
+}
+
+#hero h2 {
+    position: relative;
+    top: calc(8% + 65px);
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: black;
+}
+
+#hero .title-split-2 {
+    left: 14%;
+    display: inline-block;
+    position: relative;
+}
+
+#hero .gist {
+    color: white;
+    position: relative;
+    text-align: right;
+    width: 35%;
+    top: calc(40% + 65px);
+    left: 15%;
+}
+
+.diagonal-split-background {
+    background-color: #e31837;
+    background-image: -webkit-linear-gradient(69deg, #e31837 48%, #f8f9fa 48%);
+}
+
+#hyperlink {
+    color: white;
+    text-decoration: none;
+    background-color: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #hero .gist {
+        text-align: left;
+        width: 50%;
+        left: 140px;
+        top: calc(45% + 100px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hero h2 {
+        font-size: 9vw;
+    }
+    #hero .gist {
+        text-align: left;
+        width: 100%;
+        left: 0;
+        top: calc(40% + 100px);
+    }
+    #schedule #gym-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #hero .gist {
+        top: calc(35% + 100px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #hero .gist {
+        top: calc(30% + 100px);
+    }
+}
+
+#events {
+    text-align: center;
+}
+
+#events .ann-message {
+    margin-top: 30px;
+}
+
+#events .ann-title {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+#events .ann-date {
+    font-style: oblique;
+    margin: 0;
+}
+
+#events .ann-content {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
