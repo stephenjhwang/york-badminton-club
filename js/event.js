@@ -74,9 +74,9 @@ $(document).ready(function() {
                 '</div>'
         });
         if (messages != "")
-            $('#events').html("<h2>events</h2>" + messages);
+            $('#events').html("<h2>Events</h2>" + messages);
         else
-            $('#events').html("<h2>events</h2>" + '<p class="ann-date">No events to Show</p>');
+            $('#events').html("<h2>Events</h2>" + '<p class="ann-date">No events to Show</p>');
 
     });
 });
