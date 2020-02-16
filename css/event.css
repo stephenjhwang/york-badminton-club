@@ -5,7 +5,7 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 50px;
 }
 
 body a:hover {
@@ -17,13 +17,13 @@ section {
     padding: 40px;
 }
 
-section:nth-child(odd) {
-    background-color: #f8f9fa;
+.background {
+    background-color: #e31837;
+    background-image: -webkit-linear-gradient(249deg, #e31837 20%, #f8f9fa 20%);
 }
 
-section:nth-child(even) {
-    background-color: #e31837;
-    color: white;
+.subsection h2 {
+    font-size: 50px;
 }
 
 #navbar {
@@ -77,24 +77,6 @@ section:nth-child(even) {
     font-size: 126px;
 }
 
-
-/*
-#hero {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.65), 
-        rgba(255, 255, 255, 0)),
-         url('../images/backgrounds/background_1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    padding-top: 96px;
-    height: 100%;
-    width: 100%;
-}
-*/
-
 #hero {
     height: 100%;
 }
@@ -125,47 +107,6 @@ section:nth-child(even) {
 .diagonal-split-background {
     background-color: #e31837;
     background-image: -webkit-linear-gradient(69deg, #e31837 48%, #f8f9fa 48%);
-}
-
-#schedule #gym-img {
-    width: 35%;
-    margin: 0 2.5% 2.5% 2.5%;
-    border: solid 15px #f8f9fa;
-}
-
-#schedule article {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin-left: 5%;
-}
-
-#schedule a {
-    text-decoration: underline;
-    color: unset;
-}
-
-#faq {
-    text-align: center;
-    transition: 0.8s ease;
-    max-height: 170px;
-    overflow: hidden;
-}
-
-#faq-toggle {
-    transition: 0.8s ease;
-    height: 50px;
-    cursor: pointer;
-    margin-bottom: 35px;
-}
-
-#faq-toggle.collapse {
-    transform: rotate(180deg);
-    display: inline;
-}
-
-#faq p:not(:last-child) {
-    margin-bottom: 40px;
 }
 
 #hyperlink {
@@ -210,32 +151,25 @@ section:nth-child(even) {
     }
 }
 
-
-/* @media screen and (max-width: 600px) {
-    #hero .gist {
-        top: calc(35% + 100px);
-    }
-} */
-
-#announcements {
+#events {
     text-align: center;
 }
 
-#announcements .ann-message {
+#events .ann-message {
     margin-top: 30px;
 }
 
-#announcements .ann-title {
+#events .ann-title {
     margin: 0;
     font-size: 1.3rem;
 }
 
-#announcements .ann-date {
+#events .ann-date {
     font-style: oblique;
     margin: 0;
 }
 
-#announcements .ann-content {
+#events .ann-content {
     margin-top: 20px;
     margin-bottom: 0;
 }
