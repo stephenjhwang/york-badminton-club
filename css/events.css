@@ -3,6 +3,7 @@
     background-color:#f8f9fa;
     color: black;
     text-align: left;
+    min-height: calc(100% - 282px);
 }
 
 #events h1:first-child {

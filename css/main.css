@@ -246,6 +246,11 @@ section:nth-child(even) {
     text-align: left;
 }
 
+#announcements h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
 #announcements h1, #announcements h3 {
     color: rgba(0,0,0,0.9)
 }

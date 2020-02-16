@@ -1,4 +1,21 @@
 $( document ).ready(function() {
+    const options = {
+        noHeaderId: true,
+    }
+
+    const converter = new showdown.Converter(options);
+
+    var value = "";
+    fetch('https://yorkubadminton.com/events/events-section.txt')
+    .then((res) => res.text())
+    .then((data) => {
+        //let value = $('#markdown-editor').val()
+        let html = converter.makeHtml(data);
+        html = "<h1>Announcements</h1>" + html;
+        $('#announcements').html(html);
+    });
+
+
     $('#faq-toggle').click(function() {
         if ( $(this).hasClass('expand') ) {
             $(this).removeClass('expand').addClass('collapse');
