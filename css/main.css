@@ -178,6 +178,12 @@ section:nth-child(even) {
     background-color: none;
 }
 
+@media screen and (min-width: 750px) {
+    section#faq.subsection {
+        padding: 40px 140px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #hero .gist {
         text-align: left;
