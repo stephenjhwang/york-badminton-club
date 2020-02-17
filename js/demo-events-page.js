@@ -4,10 +4,13 @@ const options = {
 
 $( document ).ready(function() {
     const converter = new showdown.Converter(options);
+
+    let defaultHTML = converter.makeHtml($('#markdown-editor').val());
+    $('#events').html(defaultHTML);
+
     $('#translate-md').click(function() {
         let value = $('#markdown-editor').val()
         let html = converter.makeHtml(value);
-        html = "<h1>Events</h1>" + html;
         $('#events').html(html);
     });
 });

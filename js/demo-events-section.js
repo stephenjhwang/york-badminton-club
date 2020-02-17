@@ -5,10 +5,13 @@ const options = {
 
 $( document ).ready(function() {
     const converter = new showdown.Converter(options);
+
+    let defaultHTML = converter.makeHtml($('#markdown-editor').val());
+    $('#announcements').html(defaultHTML);
+    
     $('#translate-md').click(function() {
         let value = $('#markdown-editor').val()
         let html = converter.makeHtml(value);
-        html = "<h1>Announcements</h1>" + html;
         $('#announcements').html(html);
     });
 
