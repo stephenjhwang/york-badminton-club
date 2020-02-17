@@ -14,7 +14,6 @@ $( document ).ready(function() {
     .then((data) => {
         //let value = $('#markdown-editor').val()
         let html = converter.makeHtml(data);
-        html = "<h1>Announcements</h1>" + html;
         $('#announcements').html(html);
     })
     .catch(err => {
