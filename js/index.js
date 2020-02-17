@@ -7,11 +7,18 @@ $( document ).ready(function() {
 
     var value = "";
     fetch('https://yorkubadminton.com/events/events-section.txt')
-    .then((res) => res.text())
+    .then(res => {
+        if (res.status == 200) return res.text();
+        else throw new Error("something went wrong")
+    })
     .then((data) => {
         //let value = $('#markdown-editor').val()
         let html = converter.makeHtml(data);
         html = "<h1>Announcements</h1>" + html;
+        $('#announcements').html(html);
+    })
+    .catch(err => {
+        let html = "<center>Currently No Events</center>"
         $('#announcements').html(html);
     });
 
