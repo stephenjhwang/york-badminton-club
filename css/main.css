@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    color: rgba(0,0,0,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 h1 {
@@ -109,7 +109,7 @@ section:nth-child(even) {
     top: calc(8% + 65px);
     font-size: 4.5vw;
     font-weight: bold;
-    color: rgba(0,0,0,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 #hero .title-split-2 {
@@ -270,7 +270,7 @@ section:nth-child(even) {
 
 #markdown-editor {
     height: calc(100% - 50px);
-    width: 100%; 
+    width: 100%;
     display: block;
 }
 
@@ -292,10 +292,12 @@ section:nth-child(even) {
     margin-bottom: 1.5rem;
 }
 
-#announcements h1, #announcements h3 {
-    color: rgba(0,0,0,0.9)
+#announcements h1,
+#announcements h3 {
+    color: rgba(0, 0, 0, 0.9)
 }
 
-#announcements h2, #announcements h4 {
-    color: rgba(0,0,0,0.6)
+#announcements h2,
+#announcements h4 {
+    color: rgba(0, 0, 0, 0.6)
 }
