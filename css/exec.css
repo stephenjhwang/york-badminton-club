@@ -1,0 +1,11 @@
+#exec {
+    padding: 75px 15%;
+    background-color: #f8f9fa;
+    color: black;
+    text-align: left;
+    min-height: calc(100% - 282px);
+}
+
+#header {
+    font-size: 35px;
+}
