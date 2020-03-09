@@ -13,6 +13,10 @@ h2 {
     font-size: 32px;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 body a:hover {
     text-decoration: none;
     color: unset;

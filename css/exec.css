@@ -3,11 +3,11 @@
     background-color: #f8f9fa;  
     color: black;
     text-align: left;
-    min-height: calc(100% - 282px);
+    min-height: calc(100% - 281px);
 }
 
 #exec h1 {
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
 #exec h1,
