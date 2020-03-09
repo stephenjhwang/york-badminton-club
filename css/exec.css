@@ -1,17 +1,26 @@
 #exec {
-    padding: 75px 15%;
-    background-color: #f8f9fa;
+    padding: 110px 15% 75px 15%;
+    background-color: #f8f9fa;  
     color: black;
     text-align: left;
     min-height: calc(100% - 282px);
 }
 
-#canvas {
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 75px;
+#exec h1 {
+    margin: 0 0 10px 0;
 }
 
-#header {
-    font-size: 35px;
+#exec h1,
+#exec h3 {
+    color: rgba(0, 0, 0, 0.9)
+}
+
+#exec h2,
+#exec h4 {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+#exec h3,
+#exec h4 {
+    text-align: left;
 }

@@ -1,17 +1,26 @@
-#exec {
-    padding: 75px 15%;
-    background-color: #f8f9fa;
+#team {
+    padding: 110px 15% 75px 15%;
+    background-color: #f8f9fa;  
     color: black;
     text-align: left;
     min-height: calc(100% - 282px);
 }
 
-#canvas {
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 75px;
+#team h1 {
+    margin: 0 0 10px 0;
 }
 
-#header {
-    font-size: 35px;
+#team h1,
+#team h3 {
+    color: rgba(0, 0, 0, 0.9)
+}
+
+#team h2,
+#team h4 {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+#team h3,
+#team h4 {
+    text-align: left;
 }
