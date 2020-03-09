@@ -3,6 +3,8 @@
 ## Libraries / Dependencies
 - Jquery => https://api.jquery.com/
 - Bootstrap => https://getbootstrap.com/docs/4.0/getting-started/introduction/
+- Markdown editor => https://github.com/showdownjs/showdown/wiki/Tutorial:-Markdown-editor-using-Showdown
+- Lightbox (Gallery) => https://github.com/lokesh/lightbox2
 
 ## How do I update the text on the events page or announcments section?
 
